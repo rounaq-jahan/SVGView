@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-	name: "SVGView",
+	name: "SVGViewLib",
 	platforms: [
 		.macOS(.v11),
         .iOS(.v14),
@@ -11,13 +11,13 @@ let package = Package(
     ],
     products: [
     	.library(
-    		name: "SVGView", 
-    		targets: ["SVGView"]
+    		name: "SVGViewLib",
+    		targets: ["SVGViewLib"]
     	)
     ],
     targets: [
     	.target(
-    		name: "SVGView",
+    		name: "SVGViewLib",
             path: "Source",
             exclude: ["Info.plist"]
         )
