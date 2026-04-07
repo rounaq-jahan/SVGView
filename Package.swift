@@ -19,7 +19,10 @@ let package = Package(
     	.target(
     		name: "SVGViewLib",
             path: "Source",
-            exclude: ["Info.plist"]
+            exclude: ["Info.plist"],
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution"])
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]
